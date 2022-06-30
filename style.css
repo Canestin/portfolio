@@ -1,0 +1,138 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', 'Poppins', sans-serif;
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+
+header{
+    height: 10vh;
+    background-color:#5bcba7 ;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > img{
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 50%;
+    margin-left: 25px;
+}
+
+header > ul {
+    width: 55vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20vw;
+    margin-right: 100px;
+}
+.navbar a {
+    color: #050a30;
+    font-weight: bold;
+}
+
+.navbar a {
+    position: relative;
+}
+
+
+.navbar a::after{
+	content: '';
+	width: 0;
+    position: absolute;
+	height: 3px;
+	background: #050a30;
+	bottom: -3px;
+	left: 0;
+	transition: ease .20s;
+}
+.navbar a:hover::after{
+	width: 100%;
+}
+
+.container-home{
+    position: relative;
+    background-image: url(img/background-home.png);
+    min-height: 100vh;
+	height: 100%;
+    width: 100%;
+	background-size: cover;
+}
+
+.home-img img {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+}
+
+.home-img {
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+    background-color: #5bcba7;
+    margin-left: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home {
+    margin-top: 20vh;
+    /* border: 3px solid pink; */
+    display: grid;
+    grid-template-columns: 6fr 6fr 2fr;
+}
+
+.home-text{
+    /* border: 3px solid rgb(158, 19, 42); */
+    color: white;
+}
+
+.home-text h2{
+    font-size: 35px;
+}
+
+.home-text h1{
+    font-size: 45px;
+}
+
+.home-text span{
+   color: #5bcba7;
+}
+
+.social{
+    margin-top: 15px;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.social a{
+	width: 40px;
+	height: 40px;
+    border-radius: 50%;
+	display: inline-flex;
+    justify-content: center;
+    align-items: center;
+	background: #5bcba7;
+	font-size: 17px;
+	color: pink;
+}
+
+.social img{
+    width: 25px;
+    height:25px;
+}
+
+.social a:hover{
+    background-color: bisque;
+    transform: scale(1.2);
+    transition: all 0.4s ease;
+}
