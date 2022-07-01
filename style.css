@@ -18,8 +18,7 @@ header{
 }
 
 header > img{
-    width: 3.5vw;
-    height: 3.5vw;
+    width: 10vw;
     border-radius: 50%;
     margin-left: 25px;
 }
@@ -59,21 +58,22 @@ header > ul {
 .container-home{
     position: relative;
     background-image: url(img/background-home.png);
+    background-size: cover;
+    background-position-x: center ;
     min-height: 100vh;
-	height: 100%;
     width: 100%;
-	background-size: cover;
+	
 }
 
 .home-img img {
-    width: 270px;
-    height: 270px;
+    width: 230px;
+    height: 230px;
     border-radius: 50%;
 }
 
 .home-img {
-    width: 275px;
-    height: 275px;
+    width: 234px;
+    height: 234px;
     border-radius: 50%;
     background-color: #5bcba7;
     margin-left: 140px;
@@ -87,11 +87,13 @@ header > ul {
     /* border: 3px solid pink; */
     display: grid;
     grid-template-columns: 6fr 6fr 2fr;
+    height: 43vh;
 }
 
 .home-text{
     /* border: 3px solid rgb(158, 19, 42); */
     color: white;
+    position: relative;
 }
 
 .home-text h2{
@@ -127,12 +129,31 @@ header > ul {
 }
 
 .social img{
-    width: 25px;
-    height:25px;
+    width: 30px;
+    height:30px;
 }
 
 .social a:hover{
     background-color: bisque;
-    transform: scale(1.2);
-    transition: all 0.4s ease;
+    transform: scale(1.3);
+    transition: all 0.3s ease;
+}
+
+.home-text > span{
+    color: #050a30;
+    font-weight: 500;
+    padding: 10px 25px;
+    background-color: #5bcba7;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+}
+
+.home-text > span:hover{
+    cursor:help;
+    background-color: bisque;
+}
+
+::selection {
+    background-color: #5bcba7;
 }
