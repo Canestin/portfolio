@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Jost', 'Poppins', sans-serif;
-	list-style: none;
 	text-decoration: none;
 	scroll-behavior: smooth;
 }
@@ -16,6 +15,7 @@ header{
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    list-style: none;
 }
 
 header > img{
@@ -32,6 +32,7 @@ header > ul {
     align-items: center;
     padding-left: 20vw;
     margin-right: 100px;
+    list-style: none;
 }
 .navbar a {
     color:#050a30;
@@ -151,45 +152,19 @@ header > ul {
     margin: 60px auto;
 }
 
-.infos{
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.infos img{
-    width: 350px;
-}
-
-.gabon{
-    margin-top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.infos h4{
-    font-size: 1.5rem;
-}
-
-.infos h1{
-    font-size: 2.4rem;
-}
-
 .formation{
-    height: 400px;
     width: 80vw;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 60px;
-    background-color: brown; 
+    gap: 50px;
+    padding: 20px;
 }
 
 .formation-bloc{
-    height: 300px;
-    background-color: #5bcba7;
+    padding: 10px 20px 20px 0;
+    box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.2 );
+    color:#050a30;
 }
 
 .formation > h1{
@@ -202,3 +177,121 @@ header > ul {
     font-size: 2rem;
     margin-bottom: 30px;
 }
+
+.title-bloc-formation{
+    padding-left: 40px;
+}
+
+.title-bloc-formation ul{
+    padding: 10px 0 0 20px;
+}
+
+.infos{
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.infos h1{
+    font-size: 2.4rem;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 25px;
+    row-gap: 12px;
+    padding: 5px;
+}
+
+.photos img{
+    width: 100%;
+    box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.5);
+}
+
+.img-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;  
+    top:0;
+    left:0;
+    text-align: center;
+    transition: all 0.8s;
+}
+
+.img-text:hover{
+    background: linear-gradient(rgb(0, 0, 0, 0.3), #050a30);
+}
+
+.img-text h4{
+    position: absolute;
+    width: 100%;
+    color: white;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.40s;
+}
+
+.img-text:hover h4{
+    opacity: 1;
+    bottom: 45%;
+}
+
+.essai{
+    position: relative;    /* A revoir pour la montée des 3 photos ! */
+}
+
+footer{
+    margin-top: 100px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #050a30;
+    color: #ffffff;
+}
+
+.contact{
+    margin: 30px auto 60px;
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact a{
+	width: 60px;
+	height: 60px;
+    border-radius: 50%;
+	display: inline-flex;
+    justify-content: center;
+    align-items: center;
+	background: #5bcba7;
+}
+
+.contact img{
+    width: 35px;
+    height:35px;
+}
+
+.contact a:hover{
+    background-color: bisque;
+    transform: scale(1.3);
+    transition: all 0.3s ease;
+}
+
+footer span{
+    text-decoration-line: underline;
+}
+
+footer span:hover{
+    text-decoration-line: underline;
+    /* text-decoration-style: wavy; */
+    animation: mycan 0.1s infinite;
+}
+
+@keyframes mycan {
+    50% {text-decoration-style: wavy;}
+  }

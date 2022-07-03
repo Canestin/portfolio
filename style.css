@@ -68,14 +68,20 @@ header > ul {
 .home-img img {
     width: 230px;
     height: 230px;
+    border: 2px solid #5bcba7;
     border-radius: 50%;
+    position: absolute;
+    top: 32%;
+    animation: anim-photo 3s infinite;
+}
+
+.home-img img:hover {
+    animation: anim-photo-hover 0.1s infinite;
 }
 
 .home-img {
     width: 234px;
     height: 234px;
-    border-radius: 50%;
-    background-color: #5bcba7;
     margin-left: 140px;
     display: flex;
     justify-content: center;
@@ -156,4 +162,12 @@ header > ul {
 
 ::selection {
     background-color: #5bcba7;
+}
+
+@keyframes anim-photo {
+    50% {top: 37%;}
+}
+
+@keyframes anim-photo-hover {
+    100% {transform: rotate(360deg);}
 }
