@@ -8,6 +8,7 @@
 }
 
 header{
+    z-index: 1000;
     width: 100%;
     height: 10vh;
     background-color:#5bcba7;
@@ -58,6 +59,20 @@ header > ul {
 	width: 100%;
 }
 
+button#lang {
+    border: 3px solid #050a30;
+    border-radius: 5px;
+    padding: 7px 20px;
+    background-color: transparent;
+    font-weight: bold ;
+}
+
+button#lang:hover {
+    background-color: #050a30;
+    color: #ffffff;
+    cursor: pointer;
+}
+
 ::selection {
     background-color: #5bcba7;
 }
@@ -74,6 +89,7 @@ header > ul {
     text-align: center;
     font-weight: 10;
     padding-top: 15vh;
+    
 }
 
 .container div{
@@ -154,7 +170,7 @@ header > ul {
 
 .formation{
     width: 80vw;
-    margin: 0 auto;
+    margin: 0 auto 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 50px;
@@ -195,6 +211,7 @@ header > ul {
 
 .infos h1{
     font-size: 2.4rem;
+    margin-bottom: 20px;
 }
 
 .photos {
@@ -287,11 +304,10 @@ footer span{
 }
 
 footer span:hover{
-    text-decoration-line: underline;
-    /* text-decoration-style: wavy; */
-    animation: mycan 0.1s infinite;
+    text-decoration-line: none;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 30%;
+    padding-bottom: .25em;
 }
-
-@keyframes mycan {
-    50% {text-decoration-style: wavy;}
-  }

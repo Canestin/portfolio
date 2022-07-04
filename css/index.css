@@ -55,9 +55,24 @@ header > ul {
 	width: 100%;
 }
 
+button#lang {
+    border: 3px solid #050a30;
+    border-radius: 5px;
+    padding: 7px 20px;
+    background-color: transparent;
+    font-weight: bold ;
+}
+
+button#lang:hover {
+    background-color: #050a30;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
 .container-home{
     position: relative;
-    background-image: url(img/background-home.png);
+    background-image: url(../img/background-home.png);
     background-size: cover;
     background-position-x: center ;
     min-height: 100vh;
