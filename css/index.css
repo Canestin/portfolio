@@ -73,11 +73,12 @@ button#lang:hover {
 .container-home{
     position: relative;
     background-image: url(../img/background-home.png);
-    background-size: cover;
-    background-position-x: center ;
+    background-size:100% 100%;
+    /* background-size: cover;
+    background-position-x: center ; */
     min-height: 100vh;
     width: 100%;
-	
+    animation: mymove 7s infinite;
 }
 
 .home-img img {
@@ -86,7 +87,7 @@ button#lang:hover {
     border: 2px solid #5bcba7;
     border-radius: 50%;
     position: absolute;
-    top: 32%;
+    top: 33%;
     animation: anim-photo 3s infinite;
 }
 
@@ -179,8 +180,12 @@ button#lang:hover {
     background-color: #5bcba7;
 }
 
+@keyframes mymove {
+    50% {background-size: 101% 101%;}
+}  
+
 @keyframes anim-photo {
-    50% {top: 37%;}
+    50% {top: 36%;}
 }
 
 @keyframes anim-photo-hover {

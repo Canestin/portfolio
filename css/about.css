@@ -11,12 +11,15 @@ header{
     z-index: 1000;
     width: 100%;
     height: 10vh;
-    background-color:#5bcba7;
+    /* background-color:#5bcba7;    /* Change */
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     list-style: none;
+    padding-top: 70px;   /* Change */
+    transition: all .8s;
 }
 
 header > img{
@@ -36,7 +39,8 @@ header > ul {
     list-style: none;
 }
 .navbar a {
-    color:#050a30;
+    /* color:#050a30; */   /* Change */
+    color: #5bcba7;
     font-weight: bold;
 }
 
@@ -60,7 +64,9 @@ header > ul {
 }
 
 button#lang {
-    border: 3px solid #050a30;
+    /* border: 3px solid #050a30;  /* Change */
+    border: 3px solid #5bcba7;
+    color: #5bcba7;   /* Change */
     border-radius: 5px;
     padding: 7px 20px;
     background-color: transparent;
@@ -80,7 +86,7 @@ button#lang:hover {
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     height: 110vh;
     color: #ffffff;
@@ -88,7 +94,7 @@ button#lang:hover {
     color:#5bcba7;
     text-align: center;
     font-weight: 10;
-    padding-top: 15vh;
+    /* padding-top: 15vh; */
     
 }
 
@@ -152,7 +158,20 @@ button#lang:hover {
 .bloc{
     box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.1);
     padding: 10px 20px 5px 20px;
+    transition: all 0.2s;
 }
+
+.bloc:hover {
+    background-color: #050a30;
+    opacity: 0.4;
+    transform: scale(1.1) rotate(5deg);
+    border-radius: 12px;
+}
+
+.bloc:hover p{
+    color: white;
+    opacity: 1;
+}    
 
 .bloc-text p {
     font-size: 0.9em;
@@ -167,9 +186,8 @@ button#lang:hover {
     align-self: center ;
     margin: 60px auto;
 }
-
 .formation{
-    width: 80vw;
+    width: 75vw;
     margin: 0 auto 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -178,7 +196,7 @@ button#lang:hover {
 }
 
 .formation-bloc{
-    padding: 10px 20px 20px 0;
+    padding: 20px;
     box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.2 );
     color:#050a30;
 }
@@ -195,7 +213,7 @@ button#lang:hover {
 }
 
 .title-bloc-formation{
-    padding-left: 40px;
+    list-style-image : url('../img/circles.png')
 }
 
 .title-bloc-formation ul{
@@ -310,4 +328,35 @@ footer span:hover{
     background-repeat: repeat-x;
     background-size: 30%;
     padding-bottom: .25em;
+}
+
+.title-bloc-formation img{
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    transition: all .4s;
+    margin-bottom: 10px;
+}
+
+.title-bloc-formation img:hover{
+    transform: scale(1.02) rotate(1deg);
+}
+
+.specialites{
+    margin-top: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px; 
+}
+
+.specialites div{
+    background-color:#3b9fce;
+    margin-top: 2px;
+    padding: 20px;
+    transition: all .3s;
+    cursor: cell;
+}
+
+.specialites div:hover{
+    transform: translateY(-10px);
 }

@@ -6,18 +6,19 @@
 	text-decoration: none;
 	scroll-behavior: smooth;
 }
-
 header{
+    z-index: 1000;
     width: 100%;
     height: 10vh;
-    background-color:#5bcba7;
+    /* background-color:#5bcba7;    /* Change */
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: fixed;
     list-style: none;
+    padding-top: 70px;   /* Change */
+    transition: all .8s;
 }
 
 header > img{
@@ -37,7 +38,8 @@ header > ul {
     list-style: none;
 }
 .navbar a {
-    color:#050a30;
+    /* color:#050a30; */   /* Change */
+    color: #5bcba7;
     font-weight: bold;
 }
 
@@ -60,12 +62,10 @@ header > ul {
 	width: 100%;
 }
 
-::selection {
-    background-color: #5bcba7;
-}
-
 button#lang {
-    border: 3px solid #050a30;
+    /* border: 3px solid #050a30;  /* Change */
+    border: 3px solid #5bcba7;
+    color: #5bcba7;   /* Change */
     border-radius: 5px;
     padding: 7px 20px;
     background-color: transparent;
@@ -78,10 +78,13 @@ button#lang:hover {
     cursor: pointer;
 }
 
+::selection {
+    background-color: #5bcba7;
+}
 
 footer{
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
     width: 100%;
     margin-top: 100px;
     padding: 50px;
@@ -131,6 +134,49 @@ footer span:hover{
     animation: mycan 0.1s infinite;
 }
 
+.container{
+    padding-top: 25vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    height: 110vh;
+    color: #ffffff;
+    background-color:#050a30;
+    text-align: center;
+    font-weight: 10;
+}
+
+.text{
+    background-color: brown;
+}
+
+.icones{
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.icones img {
+    width: 100px;
+}
+
+.container div{
+    align-self: flex-start;
+    text-align: start;
+    color: white;
+}
+
+.container h1{
+    font-size: 80px;
+}
+
+.container p{
+    font-size: 20px;
+}
+
+.container span{
+    font-size: 20px;
+}
+
 @keyframes mycan {
     50% {text-decoration-style: wavy;}
-  }
+}

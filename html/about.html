@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Site web personnel">
@@ -12,28 +12,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="../App.js" defer></script>
     <title>A propos</title>
 </head>
 <body>
-    <section id="header">
+    <section>
         <header>
-            <img src="../img/logo-canestin.png" alt="Canestin">
+            <img id="logo" src="../img/logo-blanc.png" alt="logo de Canestin">
         
             <ul class="navbar">
                 <li><a href="../index.html">Accueil</a></li>
                 <li><a href="about.html">A propos</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="portfolio.html">Mes Projets</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><button id="lang" href="#">Anglais</button></li>
             </ul>
         </header>
 
         <div class="container">
-            <img src="../img/can2.jpg"/>
+            <!-- <img src="../img/can2.jpg"/> -->
             <h1> À <span style="color: white; font-size: 80px;"> PROPOS </span> DE MOI </h1>
             <p> Je suis prêt à partager mes connaissances et mon expérience.</p>
-            <span> Mais plus encore, à en recevoir !</span>
-            <span> Mais avant, <span class="text-blanc"> Just give me time to fix a bug ! </span> </span>
+            <span class="text-blanc"> Mais plus encore, à en recevoir !</span>
         </div>
     </section>
 
@@ -82,37 +82,21 @@
         <h1 class="title-formation"> FORMATION </h1> 
         <div class="formation">
             <div class="formation-bloc">
-                <div class="formation-icon">
-
-                </div>
-
                 <div class="title-bloc-formation">
+                    <a title="Cliquez pour en savoir plus sur l'établissement" href="https://www.isep.fr/" target="_blank"> <img src="../img/isep.jpg" alt="isep"> </a>      
                     <h3> Institut Supérieur d'Electronique de Paris</h3>
                     <h4> 2021 - 2024</h4>
-                    <ul>
-                        <li>Algorithmique et programmation</li>
-                        <li>Réseaux et télécommunication</li>
-                        <li>Développement web et logiciel</li>
-                        <li>Science et traitement des données</li>
-                        <li>Systèmes électroniques </li>
-                        <li>Management</li>
-                    </ul>
-                </div>
-
-            </div>
-            <div class="formation-bloc">
-                <div class="formation-icon">
-
-                </div>
-                
-                <div class="title-bloc-formation">
-                    <h3> CPGE Lycée National Léon Mba</h3>
-                    <h4> 2019 - 2021</h4>
-                    <ul>
-                        <li>Mathématiques & Physiqye</li>
-                        <li>Sciences de l'ingénieur</li>
-                        <li>Python & SQL</li>
-                    </ul>
+                    <div class="specialites">
+                        <div>Architecture des Systèmes d'Infomartion</div>
+                        <div>Intelligence des Données</div>
+                        <div>Développement Web & Logiciel</div>
+                        <div>Ergonomie et interfaces Numériques</div>
+                        <div>Conception Systèmes Embarqués</div>
+                        <div>Sécurité numérique et Réseaux</div>
+                        <div>Science et Traitement des données</div>
+                        <div>Numérique et Santé</div>
+                        <div>Innovation et Création d'entreprise</div>
+                    </div>
                 </div>
             </div>
         </div>
