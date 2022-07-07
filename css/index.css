@@ -59,13 +59,15 @@ button#lang {
     border: 3px solid #050a30;
     border-radius: 5px;
     padding: 7px 20px;
-    background-color: transparent;
+    background-color: #050a30;
+    color: #5bcba7;
     font-weight: bold ;
 }
 
 button#lang:hover {
-    background-color: #050a30;
-    color: #ffffff;
+    background-color: transparent;
+    border: 3px solid #050a30;
+    color: #050a30;
     cursor: pointer;
 }
 
@@ -89,10 +91,6 @@ button#lang:hover {
     position: absolute;
     top: 33%;
     animation: anim-photo 3s infinite;
-}
-
-.home-img img:hover {
-    animation: anim-photo-hover 0.1s infinite;
 }
 
 .home-img {
@@ -186,8 +184,4 @@ button#lang:hover {
 
 @keyframes anim-photo {
     50% {top: 36%;}
-}
-
-@keyframes anim-photo-hover {
-    100% {transform: rotate(360deg);}
 }

@@ -6,15 +6,10 @@
 	text-decoration: none;
 	scroll-behavior: smooth;
 }
-
-body{
-    font-size: 100%;
-}
-
 header{
     z-index: 1000;
     width: 100%;
-    height: 10vh;
+    height: 12vh;
     /* background-color:#5bcba7;    /* Change */
     background-color: transparent;
     display: flex;
@@ -23,13 +18,11 @@ header{
     position: fixed;
     list-style: none;
     padding-top: 70px;   /* Change */
-    transition: all .8s;
+    transition: all .5s;
 }
 
-header > img{
+header div img{
     width: 10vw;
-    height: 10vw;
-    border-radius: 50%;
     margin-left: 25px;
 }
 
@@ -42,8 +35,14 @@ header > ul {
     margin-right: 100px;
     list-style: none;
 }
+
+.headerMobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .navbar a {
-    /* color:#050a30; */   /* Change */
     color: #5bcba7;
     font-weight: bold;
 }
@@ -51,7 +50,6 @@ header > ul {
 .navbar a {
     position: relative;
 }
-
 
 .navbar a::after{
 	content: '';
@@ -67,10 +65,29 @@ header > ul {
 	width: 100%;
 }
 
+#menu{
+    border-radius: 0;
+    display: none;
+}
 button#lang {
-    /* border: 3px solid #050a30;  /* Change */
+    border: 3px solid #050a30;
+    border-radius: 5px;
+    padding: 7px 20px;
+    background-color: #050a30;
+    color: white;
+    font-weight: bold ;
+}
+
+button#lang:hover {
+    background-color: transparent;
+    border: 3px solid #050a30;
+    color: #050a30;
+    cursor: pointer;
+}
+
+button#lang {
     border: 3px solid #5bcba7;
-    color: #5bcba7;   /* Change */
+    color: #5bcba7;
     border-radius: 5px;
     padding: 7px 20px;
     background-color: transparent;
@@ -88,8 +105,6 @@ button#lang:hover {
 }
 
 footer{
-    /* position: absolute;
-    bottom: 0; */
     width: 100%;
     margin-top: 100px;
     padding: 50px;
@@ -203,20 +218,23 @@ footer span:hover{
 
 .projects{
     margin-top: 100px;
-    background-color: red;
+    background-color: #050a3007;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
     padding: 50px;
 }
 
 .project-bloc{
-    background-color: darkgoldenrod; 
-    padding-bottom: 30px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3); 
+    border-radius: 12px;
+    background-color: #fafafa;
+    transition: all .3s;
+    height: auto;
 }
 
-.bloc-img {
-    width: 100%;
+.project-bloc:hover{
+    transform: translateY(-30px);
 }
 
 .bloc-description {
@@ -226,18 +244,150 @@ footer span:hover{
 
 .bloc-description h1 {
     padding-bottom: 10px;
+    font-size: 22px;
 }
 
 
 .bloc-img img{
     width: 100%;
+    border-radius: 12px 12px 0 0;
 }
 
-.project-bloc button{
+.bloc-description button{
     font-size: 1.1em;
-    margin-top: 20px;
     width: 100%;
     background-color: #050a30;
     color: #ffffff;
-    padding: 10px ;
+    padding: 8px ;
+    border-radius: 12px;
+    border: none;
+    margin-top: 20px;
+}
+
+.bloc-description button:hover{
+    background-color: #050a308f;
+    color: #fff;
+    cursor: pointer;
+}
+
+body > h1{
+    text-align: center;
+    margin-top: 130px;
+    font-size: 45px;
+}
+
+body > h1 span{padding: 1px 14px;
+    background-color: #050a30;
+    color: #fafafa;
+}
+
+
+@media only screen and (min-width: 1600px) {
+
+    .text div h1{
+        font-size: 100px;
+    }  
+
+    .icones img {
+        width: 90px;
+    }
+}
+
+@media only screen and (max-width: 1194px) {
+
+    .text div h1{
+        font-size: 60px;
+    }  
+
+    .icones img {
+        width: 60px;
+    }
+
+    body > h1{
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+
+    header > ul {
+        width: 60vw;
+        margin-right: 60px;
+    }
+}
+
+@media only screen and (max-width: 798px) {
+
+    header{
+        padding-top: 0px;
+        background-color: red;
+        display: block;
+    }
+
+    #menu{
+        height: 5vh;
+        margin-right: 30px;
+        width: auto;
+        display: block;
+    }
+
+    .container {
+        height: auto;
+        padding-bottom: 100px;
+    }
+    .text div h1{
+        font-size: 60px;
+    }  
+
+    .icones img {
+        width: 60px;
+        margin-top: 50px;
+    }
+
+    .headerMobile{
+        background-color: #5bcba7;
+        height: 10vh;
+    }
+
+    .headerMobile #logo{
+        height: 6vh;
+        width: auto;
+        margin-left: 15px;
+    }
+    .canou{
+        width: 100vw;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 1;
+        row-gap: 20px;
+        background-color: white;
+        padding: 100px 300px 300px 100px;
+    }
+
+    .navbarMask{
+        display: none;
+    }
+    .canou a {
+        color: #5bcba7;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .navbar a:hover {
+        color: #5bcba7;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 409px) {
+
+    .text div h1{
+        font-size: 50px;
+    }  
+
+    .icones img {
+        width: 40px;
+        margin-top: 50px;
+    }
 }
