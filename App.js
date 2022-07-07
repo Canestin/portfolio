@@ -8,12 +8,10 @@ const menu = document.querySelector('#menu');
 const headerMobile = document.querySelector('.headerMobile');
 
 
-// Scroll Header Beginning !
-
 function headerScroll(){
-        myHeader.style.backgroundColor = "#5bcba7";  // vert
+        myHeader.style.backgroundColor = "#5bcba7";  // Vert
         myHeader.style.paddingTop = "0px";
-        buttonLang.style.border = "3px solid #050a30";   // noir
+        buttonLang.style.border = "3px solid #050a30";   // Bleu sombre
         buttonLang.style.color = "#5bcba7";
         buttonLang.style.backgroundColor = "#050a30";
         logo.src = "../img/logo-noir.png";
@@ -34,30 +32,62 @@ function headerNoScroll(){
     }
 }
 
-if(window.innerWidth > 798){
-    window.addEventListener("scroll", () => {
-        if(window.scrollY > 20){
-            headerScroll();
-        } else {
-            headerNoScroll();
-        }
-    })
-    window.addEventListener("load", () => {
-        if(window.scrollY > 20){
-            headerScroll();
-        }
-    });
-}
+function myFunction(x) {
+    if (x.matches) {
+        window.addEventListener("scroll", () => {
+            if(window.scrollY > 20){
+                headerScroll();
+            } else {
+                headerNoScroll();
+            }
+        })
+        window.addEventListener("load", () => {
+            if(window.scrollY > 20){
+                headerScroll();
+            }
+        });
+    } else {
+      console.log("Oklm");
+    }
+  }
+  
+  var x = window.matchMedia("(min-width: 798px)")
+  myFunction(x) 
+  x.addListener(myFunction)
 
-// Scroll Header End !
 
+  function myFunction2(x) {
+    if (x.matches) {
+        window.addEventListener("scroll", () => {
+            if(window.scrollY > 20){
+                myHeader.style.paddingTop = "0";
+                myHeader.style.backgroundColor = "#5bcba7"; 
+                for(let i=0; i < linkNavbar.length; i++){
+                    linkNavbar[i].style.color = "#5bcba7";
+                }
+                buttonLang.style.border = "3px solid #5bcba7";
+                buttonLang.style.color = "#5bcba7";
+                buttonLang.style.backgroundColor = "#050a30";
+            } else {
+                myHeader.style.paddingTop = "0";
+                myHeader.style.backgroundColor = "#5bcba7";
+            }
+        })
+    } else {
+      console.log("Oklm");
+    }
+  }
+  
+  var x = window.matchMedia("(max-width: 798px)")
+  myFunction2(x) 
+  x.addListener(myFunction2)
 
-function turnImages(){
+function animLogos(){
     for(let i=0; i < imgLogos.length; i++){
-        animLogos(i);  
+        turnLogos(i);  
     }
     
-    function animLogos(i) {
+    function turnLogos(i) {
         imgLogos[i].animate([
             { transform: 'rotate3d(1, 2, 3, 360deg)'}
           ], {
@@ -69,5 +99,19 @@ function turnImages(){
 }
 
 window.addEventListener("load", () => {
-    turnImages();
+    animLogos();
+});
+
+menu.addEventListener("click", () => {
+    if(menu.getAttribute('src') === "../img/menu.png"){
+        menu.setAttribute("src", "../img/x.png");
+        document.querySelector(".navbar").classList.toggle("canou");
+        document.querySelector(".navbar").classList.toggle("navbarMask");
+    } else if(menu.getAttribute('src') === "../img/x.png"){
+        menu.setAttribute("src", "../img/menu.png");
+        document.querySelector(".navbar").classList.toggle("canou");
+        document.querySelector(".navbar").classList.toggle("navbarMask");
+    } else {
+        console.log("Ya un bug !");
+    }
 });

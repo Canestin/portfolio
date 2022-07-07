@@ -360,3 +360,226 @@ footer span:hover{
 .specialites div:hover{
     transform: translateY(-10px);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media */
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1600px) {
+
+    .text div h1{
+        font-size: 100px;
+    }  
+
+    .icones img {
+        width: 90px;
+    }
+}
+
+@media only screen and (max-width: 1194px) {
+
+    .text div h1{
+        font-size: 60px;
+    }  
+
+    .icones img {
+        width: 60px;
+    }
+
+    body > h1{
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+
+    header > ul {
+        width: 60vw;
+        margin-right: 60px;
+    }
+}
+
+@media only screen and (max-width: 798px) {
+
+    header{
+        padding-top: 0px;
+        background-color: #5bcba7;
+        display: block;
+        height: 7vh;
+    }
+    #menu{
+        height: 5vh;
+        margin-right: 30px;
+        width: auto;
+        display: block;
+    }
+    .headerMobile #logo{
+        display: none;
+    }
+    .headerMobile #logo-noir{
+        display: block;
+        height: 80%;
+        width: auto;
+        margin-left: 15px;
+    }
+    .container {
+        height: auto;
+        padding-bottom: 100px;
+    }
+    
+    .text div h1{
+        font-size: 60px;
+    }  
+
+    .icones img {
+        width: 60px;
+        margin-top: 50px;
+    }
+
+    .headerMobile{
+        background-color: #5bcba7;
+        height: 7vh;
+    }
+
+    .canou{
+        width: 100vw;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 1;
+        row-gap: 40px;
+        background-color: white;
+        padding: 100px 300px 300px 100px;
+        background-color: #050a30;
+    }
+
+    .canou a {
+        color: #5bcba7;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .navbarMask{
+        display: none;
+    }
+
+    .navbar a:hover {
+        color: #5bcba7;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    .container{
+        padding-top: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 110vh;
+        font-weight: 10;
+    }
+
+    .container > div {
+        align-self: center;
+    }
+
+    .text div h1{
+        font-size: 40px;
+    }  
+
+    .icones img {
+        width: 35px;
+        margin-top: 50px;
+    }
+
+    .icones div{
+        column-gap : 60px;
+        row-gap: 30px;
+    }
+
+    .navbar a {
+        font-size: 20px;
+    }
+
+    #menu{
+        height: 3.5vh;
+    }
+
+    .headerMobile #logo-noir{
+        height: 55%;
+        margin-left: 12px;
+    }
+
+    header{
+        height: 6vh;
+    }
+
+    .headerMobile{
+        height: 6vh;
+    }
+
+    body > h1 {
+        font-size: 30px;
+    }
+
+    .canou{
+        row-gap: 2px;
+        padding: 50px 50px 50vh 50px;
+    }
+
+    footer{
+        width: 100%;
+        margin-top: 100px;
+        padding: 50px;
+    }
+    
+    .contact{
+        width: 80%;
+    }
+
+    .contact a{
+        width: 45px;
+        height: 45px;
+    }
+
+    
+    .contact a img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+
+    .container{
+        height: 150vh;
+        width: 135vw;
+    }
+    .canou{
+        width: 150vw;
+        height: 130vh;
+    }
+}
