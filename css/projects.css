@@ -394,7 +394,7 @@ body > h1 span{padding: 1px 14px;
 @media only screen and (max-width: 420px) {
 
     .container{
-        padding-top: 20vh;
+        padding-top: 18vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -407,17 +407,17 @@ body > h1 span{padding: 1px 14px;
     }
 
     .text div h1{
-        font-size: 40px;
+        font-size: 50px;
     }  
 
     .icones img {
-        width: 35px;
+        width: 55px;
         margin-top: 50px;
     }
 
     .icones div{
-        column-gap : 60px;
-        row-gap: 30px;
+        column-gap : 50px;
+        row-gap: 5px;
     }
 
     .navbar a {
@@ -434,11 +434,11 @@ body > h1 span{padding: 1px 14px;
     }
 
     header{
-        height: 6vh;
+        height: 9vh;
     }
 
     .headerMobile{
-        height: 6vh;
+        height: 9vh;
     }
 
     body > h1 {

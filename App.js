@@ -98,10 +98,12 @@ function animLogos(){
     }
 }
 
+// Turn logos
 window.addEventListener("load", () => {
     animLogos();
 });
 
+// Responsive Header
 menu.addEventListener("click", () => {
     if(menu.getAttribute('src') === "../img/menu.png"){
         menu.setAttribute("src", "../img/x.png");

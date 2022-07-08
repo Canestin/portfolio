@@ -3,23 +3,28 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Jost', 'Poppins', sans-serif;
-	list-style: none;
 	text-decoration: none;
 	scroll-behavior: smooth;
 }
 
+body{
+    background-color: #050a30;
+}
+
 header{
+    z-index: 1000;
+    width: 100%;
     height: 10vh;
-    background-color:#5bcba7 ;
-    height: 60px;
+    background-color: #5bcba7;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style: none;
+    transition: all .5s;
 }
 
-header > img{
+header div img{
     width: 10vw;
-    border-radius: 50%;
     margin-left: 25px;
 }
 
@@ -30,7 +35,15 @@ header > ul {
     align-items: center;
     padding-left: 20vw;
     margin-right: 100px;
+    list-style: none;
 }
+
+.headerMobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .navbar a {
     color: #050a30;
     font-weight: bold;
@@ -39,7 +52,6 @@ header > ul {
 .navbar a {
     position: relative;
 }
-
 
 .navbar a::after{
 	content: '';
@@ -51,16 +63,26 @@ header > ul {
 	left: 0;
 	transition: ease .20s;
 }
+
 .navbar a:hover::after{
 	width: 100%;
 }
+
+#menu{
+    border-radius: 0;
+    display: none;
+}
+
+/* .headerMobile #logo-noir{
+    display: none;
+} */
 
 button#lang {
     border: 3px solid #050a30;
     border-radius: 5px;
     padding: 7px 20px;
     background-color: #050a30;
-    color: #5bcba7;
+    color: white;
     font-weight: bold ;
 }
 
@@ -76,9 +98,7 @@ button#lang:hover {
     position: relative;
     background-image: url(../img/background-home.png);
     background-size:100% 100%;
-    /* background-size: cover;
-    background-position-x: center ; */
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     animation: mymove 7s infinite;
 }
@@ -104,16 +124,15 @@ button#lang:hover {
 
 #home {
     margin-top: 20vh;
-    /* border: 3px solid pink; */
     display: grid;
     grid-template-columns: 6fr 6fr 2fr;
-    height: 43vh;
+    height: 260px;
 }
 
 .home-text{
-    /* border: 3px solid rgb(158, 19, 42); */
     color: white;
     position: relative;
+    box-sizing: content-box;
 }
 
 .home-text h2{
@@ -145,7 +164,6 @@ button#lang:hover {
     align-items: center;
 	background: #5bcba7;
 	font-size: 17px;
-	color: pink;
 }
 
 .social img{
@@ -185,3 +203,361 @@ button#lang:hover {
 @keyframes anim-photo {
     50% {top: 36%;}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1600px) {
+
+    .container-home{
+        background-size:cover;
+        animation: none;
+    }
+
+    #home {
+        height: 320px;
+    }
+
+    #logo-noir{
+        width: 15vh;
+        height: auto;
+    }
+
+    .navbar a{
+        font-size: 1vw;
+    }
+
+    .home-text h1{
+        font-size: 70px;
+    }
+
+    .home-text h2{
+        font-size: 40px;
+    }
+
+    .home-text h3, .home-text h3 span{
+        font-size: 30px;
+    }
+
+    .social a {
+        width: 40px;
+        height: 40px;
+    }
+
+    
+    .home-img img {
+        width: 240px;
+        height: 240px;
+    }
+
+    .home-img {
+        width: 250px;
+        height: 250px;
+        margin-left: 270px;
+    }
+
+}
+
+@media only screen and (max-width: 990px) {
+
+    @keyframes anim-photo {
+        50% {top: 31%;}
+    }
+
+    header > ul {
+        width: 65vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20vw;
+        margin-right: 100px;
+        list-style: none;
+    }
+
+    #home {
+        height: 205px;
+    }
+
+    .home-text h1{
+        font-size: 35px;
+    }
+
+    .home-text h2{
+        font-size: 20px;
+    }
+
+    .home-text h3, .home-text h3 span{
+        font-size: 14px;
+    }
+
+    .social{
+        width: 190px;
+    
+    }
+    
+    .social a{
+        width: 35px;
+        height: 35px;
+    }
+    
+    .social img{
+        width: 25px;
+        height:25px;
+    }
+
+    .home-img img {
+        width: 190px;
+        height: 190px;
+        top: 34%;
+    }
+
+    .home-img {
+        width: 200px;
+        height: 200px;
+        margin-left: 100px;
+    }
+
+    .home-text span {
+        padding: 5px 10px;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    
+    @keyframes anim-photo {
+        50% {top: 15%;}
+    }
+
+    #home{
+        height: 100%;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-img{
+        width: 40%;
+        height: 45%;
+        margin-left: 0;
+    }
+
+    .home-img img{
+        top: 18%
+    }
+
+    .home-text{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-home{
+        position: none;
+        background-image: none;
+        background-color: #050a30;
+        height: 100vh;
+        width: 100%;
+        animation: none;
+    }
+
+    header{
+        padding-top: 0px;
+        background-color: #5bcba7;
+        display: block;
+        height: 7vh;
+    }
+    #menu{
+        height: 3.5vh;
+        margin-right: 30px;
+        width: auto;
+        display: block;
+    }
+    .headerMobile #logo{
+        display: none;
+    }
+    .headerMobile #logo-noir{
+        display: block;
+        height: 80%;
+        width: auto;
+        margin-left: 15px;
+    }
+    .headerMobile{
+        background-color: #5bcba7;
+        height: 7vh;
+    }
+
+    .canou{
+        row-gap: 40px;
+        width: 100vw;
+        height: 100%;
+        margin-top: 50%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button#lang {
+        background-color: transparent;
+        border: 2px solid #5bcba7;
+        color: #5bcba7;
+    }
+
+    .canou a {
+        color: #5bcba7;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .navbarMask{
+        display: none;
+    }
+
+    .navbar a:hover {
+        color: #5bcba7;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 420px){
+
+    .canou{
+        height: 100%;
+        margin-top: 70%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 380px){
+
+    .home-text{
+        height: 185px;
+    }
+
+    .home-text h1{
+        font-size: 28px;
+    }
+
+    .home-text h2{
+        font-size: 18px;
+    }
+
+    .home-text h3, .home-text h3 span{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 290px){
+
+    .home-img img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .home-text h1{
+        font-size: 18px;
+    }
+
+    .home-text h2{
+        font-size: 15px;
+    }
+
+    .home-text h3, .home-text h3 span{
+        font-size: 9px;
+    }
+
+    .home-text {
+        height: 150px;
+    }
+
+    .home-text span {
+        padding: 3px 7px;
+    }
+
+    .social{
+        width: 150px;
+    }
+    .social a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .canou a {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 200px){
+
+    .home-img img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .home-text h1{
+        font-size: 14px;
+    }
+
+    .home-text h2{
+        font-size: 11px;
+    }
+
+    .home-text h3, .home-text h3 span{
+        font-size: 7px;
+    }
+
+    .home-text {
+        height: 115px;
+    }
+
+    .home-text span {
+        font-size: 10px;
+        padding: 3px 7px;
+    }
+
+    .social{
+        width: 110px;
+    }
+    .social a {
+        width: 20px;
+        height: 20px;
+    }
+
+    .social a img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .canou a {
+        font-size: 20px;
+    }
+}
+
+
+
+

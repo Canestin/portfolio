@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4c7496d2f0.js" crossorigin="anonymous"></script>
+    <!-- <script src="App.js" defer></script> -->
     <title>Accueil</title>
 </head>
 <body>
@@ -19,12 +20,15 @@
     <section class="container-home">
 
         <header>
-            <img id="logo" src="img/logo-noir.png" alt="Canestin">
-        
-            <ul class="navbar">
-                <li><a href="#">Accueil</a></li>
+            <div class="headerMobile">
+                <img id="logo-noir" src="../img/logo-noir.png" alt="logo de Canestin">
+                <img id="menu" src="../img/menu.png" alt="Icon menu">
+            </div>
+
+            <ul class="navbar navbarMask">
+                <li><a href="index.html">Accueil</a></li>
                 <li><a href="html/about.html">A propos</a></li>
-                <li><a href="html/portfolio.html">Mes Projets</a></li>
+                <li><a href="html/projects.html">Mes Projets</a></li>
                 <li><button id="lang" href="#">Anglais</button></li>
             </ul>
         </header>
@@ -50,6 +54,23 @@
         </div>
     </section>
    
+    <script>
+        menu.addEventListener("click", () => {
+            if(menu.getAttribute('src') === "../img/menu.png"){
+                document.getElementById('home').style.display = "none";
+                menu.setAttribute("src", "../img/x.png");
+                document.querySelector(".navbar").classList.toggle("canou");
+                document.querySelector(".navbar").classList.toggle("navbarMask");
+            } else if(menu.getAttribute('src') === "../img/x.png"){
+                document.getElementById('home').style.display = "flex";
+                menu.setAttribute("src", "../img/menu.png");
+                document.querySelector(".navbar").classList.toggle("canou");
+                document.querySelector(".navbar").classList.toggle("navbarMask");
+            } else {
+                console.log("Ya un bug !");
+            }
+        });
+    </script>
     
 </body>
 </html>
