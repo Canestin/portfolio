@@ -1,11 +1,11 @@
 const myHeader = document.querySelector("header");
 const linkNavbar = document.querySelectorAll('.navbar a');
 const buttonLang = document.querySelector('button#lang');
-const text = document.querySelector('.container h1');
+// const text = document.querySelector('.container h1');
 const logo = document.querySelector('#logo');
 const imgLogos = document.querySelectorAll('.icones div img');
 const menu = document.querySelector('#menu');
-const headerMobile = document.querySelector('.headerMobile');
+// const headerMobile = document.querySelector('.headerMobile');
 
 
 function headerScroll(){

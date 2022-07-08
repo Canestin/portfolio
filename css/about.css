@@ -7,6 +7,18 @@
 	scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #050a30; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #5bcba7; 
+}
+
 header{
     z-index: 1000;
     width: 100%;
@@ -447,6 +459,10 @@ footer span:hover{
 
 @media only screen and (max-width: 798px) {
 
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
     header{
         padding-top: 0px;
         background-color: red;
@@ -545,6 +561,9 @@ footer span:hover{
 
 @media only screen and (max-width: 420px) {
 
+    .title-bloc-formation h3{
+        font-size: 1em;
+    }
     .container{
         height: 50vh;
     }

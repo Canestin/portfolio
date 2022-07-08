@@ -7,6 +7,7 @@
 	scroll-behavior: smooth;
 }
 
+
 body{
     background-color: #050a30;
 }
@@ -418,6 +419,12 @@ button#lang:hover {
         color: #5bcba7;
     }
 
+    button#lang:hover {
+        background-color: transparent;
+        border: 2px solid #5bcba7;
+        color: #5bcba7;
+    }
+
     .canou a {
         color: #5bcba7;
         font-size: 30px;
@@ -445,6 +452,33 @@ button#lang:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .home-text{
+        height: 188px;
+    }
+
+    .home-text h1{
+        font-size: 25px;
+    }
+
+    .home-text h2{
+        font-size: 17px;
+    }
+
+    .home-text h3, .home-text h3 span{
+        font-size: 11px;
+    }
+
+    .home-img img {
+        width: 140px;
+        height: 140px;
+        animation: none;
+    }
+
+    .home-img{
+        width: 40%;
+        height: 35%;
     }
 }
 
