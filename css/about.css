@@ -1,3 +1,5 @@
+@import "headerMobile.css" screen and (max-width: 870px);
+
 *, ::before, ::after{
     margin: 0;
     padding: 0;
@@ -23,14 +25,12 @@ header{
     z-index: 1000;
     width: 100%;
     height: 12vh;
-    /* background-color:#5bcba7;    /* Change */
     background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     list-style: none;
-    padding-top: 70px;   /* Change */
     transition: all .5s;
 }
 
@@ -406,31 +406,6 @@ footer span:hover{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Media */
-
-
-
-
-
-
-
-
-
 @media only screen and (min-width: 1600px) {
 
     .text div h1{
@@ -465,15 +440,20 @@ footer span:hover{
 
     header{
         padding-top: 0px;
-        background-color: red;
         display: block;
         height: 7vh;
     }
+
     #menu{
-        height: 5vh;
+        height: 20px;
         margin-right: 30px;
         width: auto;
         display: block;
+    }
+
+    .headerMobile{
+        background-color: #5bcba7;
+        height: 7vh;
     }
 
     .headerMobile #logo{
@@ -482,9 +462,9 @@ footer span:hover{
 
     .headerMobile #logo-noir{
         display: block;
-        height: 80%;
+        height: 50%;
         width: auto;
-        margin-left: 15px;
+        margin-left: 12px;
     }
 
     .container {
@@ -511,25 +491,9 @@ footer span:hover{
         font-size: 50px;
     }
 
-    .headerMobile{
-        background-color: #5bcba7;
-        height: 7vh;
-    }
-
-    .canou{
-        width: 100vw;
-        min-height: 100vh;
-        display: grid;
-        grid-template-columns: 1;
-        row-gap: 40px;
-        background-color: white;
-        padding: 100px 300px 300px 100px;
-        background-color: #050a30;
-    }
-
     .canou a {
         color: #5bcba7;
-        font-size: 30px;
+        font-size: 25px;
         font-weight: bold;
     }
 
@@ -572,38 +536,8 @@ footer span:hover{
         font-size: 50px;
     }
 
-    .navbar a {
-        font-size: 20px;
-    }
-
-    #menu{
-        height: 3.5vh;
-    }
-
-    .headerMobile #logo-noir{
-        height: 55%;
-        margin-left: 12px;
-    }
-
-    header{
-        height: 9vh;
-    }
-
-    .headerMobile{
-        height: 9vh;
-    }
-
-    header{
-        height: 6vh;
-    }
-
     body > h1 {
         font-size: 30px;
-    }
-
-    .canou{
-        row-gap: 2px;
-        padding: 50px 50px 50vh 50px;
     }
 
     footer{

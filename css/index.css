@@ -1,3 +1,5 @@
+@import "headerMobile.css" screen and (max-width: 870px);
+
 *, ::before, ::after{
     margin: 0;
     padding: 0;
@@ -46,12 +48,9 @@ header > ul {
 }
 
 .navbar a {
+    position: relative;
     color: #050a30;
     font-weight: bold;
-}
-
-.navbar a {
-    position: relative;
 }
 
 .navbar a::after{
@@ -73,10 +72,6 @@ header > ul {
     border-radius: 0;
     display: none;
 }
-
-/* .headerMobile #logo-noir{
-    display: none;
-} */
 
 button#lang {
     border: 3px solid #050a30;
@@ -205,22 +200,6 @@ button#lang:hover {
     50% {top: 36%;}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (min-width: 1600px) {
 
     .container-home{
@@ -257,8 +236,7 @@ button#lang:hover {
         width: 40px;
         height: 40px;
     }
-
-    
+ 
     .home-img img {
         width: 240px;
         height: 240px;
@@ -366,6 +344,7 @@ button#lang:hover {
         flex-direction: column;
         align-items: center;
     }
+    
     .container-home{
         position: none;
         background-image: none;
@@ -377,40 +356,32 @@ button#lang:hover {
 
     header{
         padding-top: 0px;
-        background-color: #5bcba7;
         display: block;
         height: 7vh;
+        margin: 0;
     }
+
     #menu{
-        height: 3.5vh;
+        height: 20px;
         margin-right: 30px;
         width: auto;
         display: block;
     }
+
     .headerMobile #logo{
         display: none;
     }
+
     .headerMobile #logo-noir{
         display: block;
-        height: 80%;
+        height: 50%;
         width: auto;
-        margin-left: 15px;
+        margin-left: 12px;
     }
+
     .headerMobile{
         background-color: #5bcba7;
         height: 7vh;
-    }
-
-    .canou{
-        row-gap: 40px;
-        width: 100vw;
-        height: 100%;
-        margin-top: 50%;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     button#lang {
@@ -425,14 +396,14 @@ button#lang:hover {
         color: #5bcba7;
     }
 
-    .canou a {
-        color: #5bcba7;
-        font-size: 30px;
-        font-weight: bold;
-    }
-
     .navbarMask{
         display: none;
+    }
+
+    .canou a {
+        color: #5bcba7;
+        font-size: 25px;
+        font-weight: bold;
     }
 
     .navbar a:hover {
@@ -443,16 +414,6 @@ button#lang:hover {
 }
 
 @media only screen and (max-width: 420px){
-
-    .canou{
-        height: 100%;
-        margin-top: 70%;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
     .home-text{
         height: 188px;
@@ -577,18 +538,15 @@ button#lang:hover {
     .social{
         width: 110px;
     }
+
     .social a {
         width: 20px;
         height: 20px;
     }
-
+    
     .social a img {
         width: 12px;
         height: 12px;
-    }
-
-    .canou a {
-        font-size: 20px;
     }
 }
 
