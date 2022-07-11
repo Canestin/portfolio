@@ -10,7 +10,6 @@
 }
 
 header{
-    z-index: 1000;
     width: 100%;
     height: 12vh;
     background-color: transparent;
@@ -123,6 +122,19 @@ footer{
     color: #ffffff;
 }
 
+footer span{
+    text-decoration-line: underline;
+}
+
+footer span:hover{
+    text-decoration-line: none;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 30%;
+    padding-bottom: .25em;
+}
+
 .contact{
     margin: 30px auto 60px;
     width: 320px;
@@ -149,15 +161,6 @@ footer{
     background-color: bisque;
     transform: scale(1.3);
     transition: all 0.3s ease;
-}
-
-footer span{
-    text-decoration-line: underline;
-}
-
-footer span:hover{
-    text-decoration-line: underline;
-    animation: mycan 0.1s infinite;
 }
 
 .container{
@@ -213,10 +216,6 @@ footer span:hover{
 
 .container span{
     font-size: 20px;
-}
-
-@keyframes mycan {
-    50% {text-decoration-style: wavy;}
 }
 
 .projects{
@@ -365,6 +364,11 @@ body > h1 span{padding: 1px 14px;
         height: 7vh;
     }
 
+    button#lang:hover {
+        border: 3px solid #5bcba7;
+        color: #5bcba7;
+    }
+
     .canou a {
         color: #5bcba7;
         font-size: 25px;
@@ -373,12 +377,6 @@ body > h1 span{padding: 1px 14px;
 
     .navbarMask{
         display: none;
-    }
-
-    .navbar a:hover {
-        color: #5bcba7;
-        font-size: 30px;
-        font-weight: bold;
     }
 }
 

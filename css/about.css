@@ -56,12 +56,9 @@ header > ul {
 }
 
 .navbar a {
+    position: relative;
     color: #5bcba7;
     font-weight: bold;
-}
-
-.navbar a {
-    position: relative;
 }
 
 .navbar a::after{
@@ -263,7 +260,15 @@ button#lang:hover {
 .title-bloc-formation ul{
     padding: 10px 0 0 20px;
 }
+ 
+  /* --------------------------------------------------------------*/
+   
+  /* --------------------------------------------------------------*/
+   
+  /* --------------------------------------------------------------*/
 
+
+  
 .infos{
     width: 80vw;
     margin: auto;
@@ -271,10 +276,10 @@ button#lang:hover {
     padding: 20px;
 }
 
-.infos h1{
-    font-size: 2.4rem;
-    margin-bottom: 20px;
+.essai{
+    position: relative;    /* A revoir pour la montée des 3 photos ! */
 }
+
 
 .photos {
     display: grid;
@@ -318,8 +323,71 @@ button#lang:hover {
     bottom: 45%;
 }
 
+/* 
+.infos{
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
 .essai{
-    position: relative;    /* A revoir pour la montée des 3 photos ! */
+    position: relative; 
+}
+
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 25px;
+    row-gap: 12px;
+    padding: 5px;
+}
+
+.photos img{
+    width: 100%;
+    box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.5);
+}
+
+.img-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;  
+    top:0;
+    left:0;
+    text-align: center;
+    transition: all 0.8s;
+}
+
+.img-text:hover{
+    background: linear-gradient(rgb(0, 0, 0, 0.3), #050a30);
+}
+
+.img-text h4{
+    position: absolute;
+    width: 100%;
+    color: white;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.40s;
+}
+
+.img-text:hover h4{
+    opacity: 1;
+    bottom: 45%;
+} */
+ 
+ 
+  /* --------------------------------------------------------------*/
+   
+  /* --------------------------------------------------------------*/
+  /* --------------------------------------------------------------*/
+
+#section2 h1{
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 footer{
@@ -501,10 +569,9 @@ footer span:hover{
         display: none;
     }
 
-    .navbar a:hover {
+    button#lang:hover {
+        border: 3px solid #5bcba7;
         color: #5bcba7;
-        font-size: 30px;
-        font-weight: bold;
     }
 
     .formation{

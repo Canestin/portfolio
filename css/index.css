@@ -15,7 +15,6 @@ body{
 }
 
 header{
-    z-index: 1000;
     width: 100%;
     height: 10vh;
     background-color: #5bcba7;
@@ -391,7 +390,6 @@ button#lang:hover {
     }
 
     button#lang:hover {
-        background-color: transparent;
         border: 2px solid #5bcba7;
         color: #5bcba7;
     }
@@ -403,12 +401,6 @@ button#lang:hover {
     .canou a {
         color: #5bcba7;
         font-size: 25px;
-        font-weight: bold;
-    }
-
-    .navbar a:hover {
-        color: #5bcba7;
-        font-size: 30px;
         font-weight: bold;
     }
 }
