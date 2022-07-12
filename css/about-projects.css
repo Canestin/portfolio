@@ -1,0 +1,162 @@
+::-webkit-scrollbar {
+    width: 6px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #050a30; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #5bcba7; 
+}
+
+header{
+    z-index: 100;
+    padding-top: 70px;
+    background-color: transparent;
+    position: fixed;
+}
+
+.navbar a {
+    color: #5bcba7;
+    font-weight: bold;
+    position: relative;
+}
+
+.navbar a::after{
+	content: '';
+	width: 0;
+    position: absolute;
+	height: 3px;
+	background: #050a30;
+	bottom: -3px;
+	left: 0;
+	transition: ease .20s;
+}
+
+.navbar a:hover::after{
+	width: 100%;
+}
+
+
+.headerMobile #logo-noir{
+    display: none;
+}
+
+
+button#lang:hover {
+    background-color: transparent;
+    border: 3px solid #050a30;
+    color: #050a30;
+    cursor: pointer;
+}
+
+button#lang:hover {
+    background-color: #050a30;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+::selection {
+    background-color: #5bcba7;
+}
+
+footer{
+    width: 100%;
+    margin-top: 100px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #050a30;
+    color: #ffffff;
+}
+
+footer span{
+    text-decoration-line: underline;
+}
+
+footer span:hover{
+    text-decoration-line: none;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 30%;
+    padding-bottom: .25em;
+}
+
+.contact{
+    margin: 30px auto 60px;
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact a{
+	width: 60px;
+	height: 60px;
+    border-radius: 50%;
+	display: inline-flex;
+    justify-content: center;
+    align-items: center;
+	background: #5bcba7;
+}
+
+.contact img{
+    width: 35px;
+    height:35px;
+}
+
+.contact a:hover{
+    background-color: bisque;
+    transform: scale(1.3);
+    transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 870px) {
+
+    header{
+        padding-top: 0;
+    }
+
+    .headerMobile #logo-noir{
+        display: block;
+    }
+    
+}
+
+@media only screen and (max-width: 420px) {
+
+    footer{
+        width: 100%;
+        margin-top: 100px;
+        padding: 50px;
+    }
+    
+    .contact{
+        width: 80%;
+    }
+    
+    .contact a{
+        width: 45px;
+        height: 45px;
+    }
+    
+    .contact a img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+
+    .container{
+        height: 150vh;
+        width: 135vw;
+    }
+    .canou{
+        width: 150vw;
+        height: 130vh;
+    }
+}

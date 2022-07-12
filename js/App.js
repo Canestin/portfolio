@@ -1,17 +1,16 @@
 const myHeader = document.querySelector("header");
 const linkNavbar = document.querySelectorAll('.navbar a');
 const buttonLang = document.querySelector('button#lang');
-// const text = document.querySelector('.container h1');
 const logo = document.querySelector('#logo');
 const imgLogos = document.querySelectorAll('.icones div img');
 const menu = document.querySelector('#menu');
-// const headerMobile = document.querySelector('.headerMobile');
+const images = document.querySelectorAll(".essai");
 
 
 function headerScroll(){
-        myHeader.style.backgroundColor = "#5bcba7";  // Vert
+        myHeader.style.backgroundColor = "#5bcba7";  
         myHeader.style.paddingTop = "0px";
-        buttonLang.style.border = "3px solid #050a30";   // Bleu sombre
+        buttonLang.style.border = "3px solid #050a30";
         buttonLang.style.color = "#5bcba7";
         buttonLang.style.backgroundColor = "#050a30";
         logo.src = "../img/logo-noir.png";
@@ -117,3 +116,47 @@ menu.addEventListener("click", () => {
         console.log("Ya un bug !");
     }
 });
+
+
+// Slide pictures
+
+function slide(x) {
+    if (x.matches) {
+        
+        document.getElementById('arriere').addEventListener("click", () => {
+            slideImg(-1);
+        });
+
+        document.getElementById('avant').addEventListener("click", () => {
+            slideImg(1);
+        });
+
+        function slideImg(n) {
+            showImg(slideIndex += n);
+        }
+
+        var slideIndex = 1;
+        showImg(slideIndex);
+
+        function showImg(n) {
+        var i;
+        if (n > images.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = images.length}
+        for (i = 0; i < images.length; i++) {
+            images[i].style.display = "none"; 
+            if(i === slideIndex-1){
+                images[i].style.display = "block";
+            }
+        }
+        // images[slideIndex-1].style.display = "block";  
+        }
+    } else {
+        for (i = 0; i < images.length; i++) {
+            images[i].style.display = "block"; 
+        }
+    }
+  }
+
+var x = window.matchMedia("(max-width: 420px)")
+slide(x) 
+x.addListener(slide)
