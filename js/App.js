@@ -8,15 +8,15 @@ const images = document.querySelectorAll(".essai");
 
 
 function headerScroll(){
-        myHeader.style.backgroundColor = "#5bcba7";  
-        myHeader.style.paddingTop = "0px";
-        buttonLang.style.border = "3px solid #050a30";
-        buttonLang.style.color = "#5bcba7";
-        buttonLang.style.backgroundColor = "#050a30";
-        logo.src = "../img/logo-noir.png";
-        for(let i=0; i < linkNavbar.length; i++){
-            linkNavbar[i].style.color = "#050a30";
-        }
+    myHeader.style.backgroundColor = "#5bcba7";  
+    myHeader.style.paddingTop = "0px";
+    buttonLang.style.border = "3px solid #050a30";
+    buttonLang.style.color = "#5bcba7";
+    buttonLang.style.backgroundColor = "#050a30";
+    logo.src = "../img/logo-noir.png";
+    for(let i=0; i < linkNavbar.length; i++){
+        linkNavbar[i].style.color = "#050a30";
+    }
 }
 
 function headerNoScroll(){
@@ -45,17 +45,15 @@ function myFunction(x) {
                 headerScroll();
             }
         });
-    } else {
-      console.log("Oklm");
-    }
-  }
+    } else console.log("Oklm");
+}
   
-  var x = window.matchMedia("(min-width: 798px)")
-  myFunction(x) 
-  x.addListener(myFunction)
+var x = window.matchMedia("(min-width: 798px)")
+myFunction(x) 
+x.addListener(myFunction)
 
 
-  function myFunction2(x) {
+function myFunction2(x) {
     if (x.matches) {
         window.addEventListener("scroll", () => {
             if(window.scrollY > 20){
@@ -72,14 +70,13 @@ function myFunction(x) {
                 myHeader.style.backgroundColor = "#5bcba7";
             }
         })
-    } else {
-      console.log("Oklm");
-    }
-  }
+    } else console.log("Oklm");
+    
+}
   
-  var x = window.matchMedia("(max-width: 798px)")
-  myFunction2(x) 
-  x.addListener(myFunction2)
+var x = window.matchMedia("(max-width: 798px)")
+myFunction2(x) 
+x.addListener(myFunction2)
 
 function animLogos(){
     for(let i=0; i < imgLogos.length; i++){
@@ -117,9 +114,7 @@ menu.addEventListener("click", () => {
     }
 });
 
-
 // Slide pictures
-
 function slide(x) {
     if (x.matches) {
         
@@ -139,16 +134,15 @@ function slide(x) {
         showImg(slideIndex);
 
         function showImg(n) {
-        var i;
-        if (n > images.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = images.length}
-        for (i = 0; i < images.length; i++) {
-            images[i].style.display = "none"; 
-            if(i === slideIndex-1){
-                images[i].style.display = "block";
-            }
-        }
-        // images[slideIndex-1].style.display = "block";  
+            var i;
+            if (n > images.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = images.length}
+            for (i = 0; i < images.length; i++) {
+                images[i].style.display = "none"; 
+                if(i === slideIndex-1){
+                    images[i].style.display = "block";
+                }
+            }  
         }
     } else {
         for (i = 0; i < images.length; i++) {
