@@ -1,0 +1,22 @@
+# -----------------------
+# Config URL rewrite
+# -----------------------
+
+
+# Le serveur doit suivre des liens symbolique
+Options +FollowSymlinks
+
+# Activation du module de réecriture d'URL
+RewriteEngine on
+
+
+#-----------------------
+# Regles de réecriture
+#-----------------------
+
+RewriteRule ^home$ index.html
+RewriteRule ^projects$ projects.html
+RewriteRule ^about$ about.html
+RewriteRule ^accueil$ accueil.html
+RewriteRule ^apropos$ apropos.html
+RewriteRule ^projets$ projets.html [L]
