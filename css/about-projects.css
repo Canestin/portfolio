@@ -17,28 +17,6 @@ header{
     position: fixed;
 }
 
-.navbar a {
-    color: #5bcba7;
-    font-weight: bold;
-    position: relative;
-}
-
-.navbar a::after{
-	content: '';
-	width: 0;
-    position: absolute;
-	height: 3px;
-	background: #050a30;
-	bottom: -3px;
-	left: 0;
-	transition: ease .20s;
-}
-
-.navbar a:hover::after{
-	width: 100%;
-}
-
-
 .headerMobile #logo-noir{
     display: none;
 }

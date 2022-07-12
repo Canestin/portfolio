@@ -47,6 +47,12 @@ header > ul {
     background-color: #5bcba7;
 }  
 
+.navbar a {
+    color: #5bcba7;
+    font-weight: bold;
+    position: relative;
+}
+
 .navbar a::after{
 	content: '';
 	width: 0;
