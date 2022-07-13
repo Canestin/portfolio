@@ -1,14 +1,14 @@
 const menu = document.querySelector('#menu');
 
 menu.addEventListener("click", () => {
-    if(menu.getAttribute('src') === "../img/menu.png"){
+    if(menu.getAttribute('src') === "img/menu.png"){
         document.getElementById('home').style.display = "none";
-        menu.setAttribute("src", "../img/x.png");
+        menu.setAttribute("src", "img/x.png");
         document.querySelector(".navbar").classList.toggle("canou");
         document.querySelector(".navbar").classList.toggle("navbarMask");
-    } else if(menu.getAttribute('src') === "../img/x.png"){
+    } else if(menu.getAttribute('src') === "img/x.png"){
         document.getElementById('home').style.display = "flex";
-        menu.setAttribute("src", "../img/menu.png");
+        menu.setAttribute("src", "img/menu.png");
         document.querySelector(".navbar").classList.toggle("canou");
         document.querySelector(".navbar").classList.toggle("navbarMask");
     } else {

@@ -15,8 +15,12 @@ RewriteEngine on
 #-----------------------
 
 RewriteRule ^home$ index.html
-RewriteRule ^projects$ projects.html
-RewriteRule ^about$ about.html
-RewriteRule ^accueil$ accueil.html
-RewriteRule ^apropos$ apropos.html
-RewriteRule ^projets$ projets.html [L]
+RewriteRule ^en/projects$ en/projects.html
+RewriteRule ^en/about$ en/about.html
+RewriteRule ^en$ index.html
+RewriteRule ^en/$ index.html
+RewriteRule ^fr/accueil$ fr/accueil.html
+RewriteRule ^fr/$ fr/accueil.html
+RewriteRule ^fr$ fr/accueil.html
+RewriteRule ^fr/apropos$ fr/apropos.html
+RewriteRule ^fr/projets$ fr/projets.html [L]
