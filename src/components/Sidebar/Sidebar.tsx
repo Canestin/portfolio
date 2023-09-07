@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./Sidebar.module.scss";
+import Link from "next/link";
 
 export default function Sidebar() {
   return (
@@ -15,20 +16,35 @@ export default function Sidebar() {
       <div className={styles.content}>
         <div className={styles.rubrics}>
           <ul>
-            <li>Home</li>
-            <li>Projects</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Entrepreneurship</li>
+            <Link href="/">
+              <li>Home</li>
+            </Link>
+            <Link href="/experience">
+              <li>Experience</li>
+            </Link>
+            <Link href="/skills">
+              <li>Skills</li>
+            </Link>
           </ul>
         </div>
-        <div className={styles.ad}>
-          <Image src="/ad.png" alt="Profile" layout="fill" objectFit="cover" />
-        </div>
-        <p style={{ fontSize: 12 }}>
-          The best app for small businesses in Africa. Manage your sales easily.
-          Get a professional website in 5 minutes.
-        </p>
+        <Link
+          href="https://drive.google.com/file/d/1EiW3DEHyQpJ8bfHsk6TTrch2IjqYaTbS/view"
+          target="_blank"
+        >
+          <div className={styles.ad}>
+            <Image
+              src="/ad.png"
+              alt="Profile"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+
+          <p style={{ fontSize: 12, cursor: "pointer" }}>
+            The best app for small businesses in Africa. Manage your sales
+            easily. Get a professional website in 5 minutes.
+          </p>
+        </Link>
       </div>
     </div>
   );

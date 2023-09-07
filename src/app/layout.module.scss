@@ -3,6 +3,11 @@
   max-height: 100vh;
 
   .container {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     overflow-x: hidden;
     width: 100%;
     display: flex;
@@ -17,12 +22,14 @@
     width: 100%;
     max-width: 700px;
     height: 100%;
+    margin-bottom: 150px;
   }
 }
 
 /* Mobile */
 @media (max-width: 700px) {
   .main {
+    margin-bottom: 50px;
     .content {
       padding: 25px;
     }
