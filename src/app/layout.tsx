@@ -1,9 +1,9 @@
 import "./globals.scss";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Image from "next/image";
 import styles from "./layout.module.scss";
 import { Header, Sidebar } from "@components";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"], weight: "300" });
 
@@ -28,6 +28,7 @@ export default function RootLayout({
             <div className={styles.content}>{children}</div>
           </div>
         </main>
+        <Analytics />
       </body>
     </html>
   );
