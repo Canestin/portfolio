@@ -41,6 +41,10 @@ const Experience = () => {
             confidentiality of company data and prevent injections (developed
             with my collaborator)
           </li>
+          <li>
+            An internal dashboard to track Tagira’s activity (adapted by me from
+            a github fork)
+          </li>
         </ul>
 
         <p>Skills: Corporate strategy - Software development</p>

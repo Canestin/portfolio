@@ -13,9 +13,9 @@ export const metadata: Metadata = {
   openGraph: {
     url: "https://canestin.ndong.co",
     images: {
-      url: "https://canestin.ndong.co/favicon.ico",
-      width: 100,
-      height: 100,
+      url: "https://canestin.ndong.co/profile.jpeg",
+      width: 500,
+      height: 250,
     },
   },
 };
