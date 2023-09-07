@@ -17,9 +17,9 @@ const Experience = () => {
           business. My skills extend to to business strategy and software
           development, and I have a strong experience in the complete software
           development lifecycle, from from requirements gathering to continuous
-          maintenance and continuous improvement. I'm also passionate about
+          maintenance and continuous improvement. I&apos;m also passionate about
           performance, security and scalability, skills that are essential to
-          meet today's software development challenges. Translated with
+          meet today&apos;s software development challenges. Translated with
           www.DeepL.com/Translator (free version)
         </p>
 
@@ -72,9 +72,9 @@ const Experience = () => {
             data displayed coming from a REST API
           </li>
           <li>
-            Improvement of Bemum's Landing Page and integration of tools such as
-            Google Tag Manager & Facebook Pixel to understand users and enhance
-            the browsing experience
+            Improvement of Bemum&apos;s Landing Page and integration of tools
+            such as Google Tag Manager & Facebook Pixel to understand users and
+            enhance the browsing experience
           </li>
           <li>
             Addition of features to the Nest API (including the integration of

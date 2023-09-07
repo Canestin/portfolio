@@ -8,13 +8,13 @@ export default function Home() {
         Software Engineer Student & Entrepreneur
       </p>
       <p className={styles.text}>
-        I'm currently a student at ISEP Paris, a prestigious institution
-        specializing in digital engineering. In the coming weeks, I'll be
-        starting my Master's program at the University of Leicester in England
-        (semester abroad).
+        I&apos;m currently a student at ISEP Paris, a prestigious institution
+        specializing in digital engineering. In the coming weeks, I&apos;ll be
+        starting my Master&apos;s program at the University of Leicester in
+        England (semester abroad).
         <br />
         <br />
-        In addition to my academic activities, I'm very involved in
+        In addition to my academic activities, I&apos;m very involved in
         entrepreneurship. I firmly believe that technological innovation
         transcends mere trends; it is the fundamental force shaping our
         collective future. My willingness to take on stimulating challenges is

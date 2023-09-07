@@ -8,11 +8,11 @@ const PortfolioPage = () => {
       <section>
         <h2>Front-end</h2>
         <p>
-          As a front-end developer, I'm passionate about creating great user
-          experiences using technologies like HTML, CSS, and SASS. My expertise
-          in JavaScript allows me to design interactive interfaces, particularly
-          with React and Next.js. I've worked lightly with Angular (didn't go
-          in-depth)
+          As a front-end developer, I&apos;m passionate about creating great
+          user experiences using technologies like HTML, CSS, and SASS. My
+          expertise in JavaScript allows me to design interactive interfaces,
+          particularly with React and Next.js. I&apos;ve worked lightly with
+          Angular (didn&apos;t go in-depth)
         </p>
       </section>
       <section>
