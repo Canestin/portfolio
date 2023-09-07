@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 50px 0;
+}
+
+.name {
+  font-size: 20px;
+  color: var(--primary);
+}
+.social {
+  display: flex;
+  gap: 10px;
+  a {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    img {
+      width: 20px;
+      height: 20px;
+      margin: 5px;
+    }
+  }
+}

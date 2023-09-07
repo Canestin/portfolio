@@ -1,0 +1,59 @@
+.container {
+  width: 25vw;
+  max-width: 400px;
+  height: 100vh;
+  border-right: 1px solid rgb(47, 47, 47);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 30px;
+
+  .photo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 5%;
+    margin-right: 10px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  .photoCart {
+    transform: scale(1.3) translateX(-1px);
+  }
+
+  .ad {
+    width: 70%;
+    height: 65px;
+    position: relative;
+    border-radius: 5%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .content {
+    margin-left: 70px;
+
+    .rubrics {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        margin: 60px 0 30px 0;
+
+        li {
+          font-size: 20px;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: var(--primary);
+          }
+        }
+      }
+    }
+  }
+}

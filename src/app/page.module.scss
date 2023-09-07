@@ -1,0 +1,35 @@
+.title {
+  color: var(--primary);
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.description {
+  color: gray;
+  font-size: 25px;
+}
+
+.text {
+  text-align: center;
+  line-height: 35px;
+}
+
+.moreOnInsta {
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
