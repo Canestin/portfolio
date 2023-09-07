@@ -64,13 +64,13 @@ export default function Header() {
       <div className={`${styles.menu} ${show && styles.showMenu}`}>
         <div className={styles.rubrics}>
           <ul>
-            <Link href="/">
+            <Link onClick={() => setShow(false)} href="/">
               <li>Home</li>
             </Link>
-            <Link href="/experience">
+            <Link onClick={() => setShow(false)} href="/experience">
               <li>Experience</li>
             </Link>
-            <Link href="/skills">
+            <Link onClick={() => setShow(false)} href="/skills">
               <li>Skills</li>
             </Link>
           </ul>
