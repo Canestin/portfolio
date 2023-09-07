@@ -31,8 +31,7 @@ export default function Home() {
         <br />
         <br />
         With this in mind, I co-founded Tagira Africa, a company dedicated to
-        realizing this inclusive digital future. Translated with
-        www.DeepL.com/Translator (free version)
+        realizing this inclusive digital future.
       </p>
       <p>
         If you are the type to understand people from simple photos, do not

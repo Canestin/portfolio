@@ -19,8 +19,7 @@ const Experience = () => {
           development lifecycle, from from requirements gathering to continuous
           maintenance and continuous improvement. I&apos;m also passionate about
           performance, security and scalability, skills that are essential to
-          meet today&apos;s software development challenges. Translated with
-          www.DeepL.com/Translator (free version)
+          meet today&apos;s software development challenges.
         </p>
 
         <p style={{ marginTop: 20 }}>Tagira is several projects :</p>

@@ -10,6 +10,19 @@ const inter = Inter({ subsets: ["latin"], weight: "300" });
 export const metadata: Metadata = {
   title: "Canestin Ndong",
   description: "Software Engineer Student & Entrepreneur",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://canestin.ndong.co",
+    images: [
+      {
+        url: "https://canestin.ndong.co/favicon.ico",
+        width: 1200,
+        height: 630,
+        alt: "Canestin Ndong",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
