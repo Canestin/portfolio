@@ -2,23 +2,39 @@
   color: var(--primary);
   font-size: 45px;
   font-weight: 700;
+  margin-bottom: 40px;
 }
 
 .description {
   color: gray;
   font-size: 25px;
+  margin-bottom: 40px;
 }
 
 .text {
   text-align: center;
   line-height: 35px;
-}
-
-.moreOnInsta {
+  margin-bottom: 40px;
 }
 
 /* Mobile */
 @media (max-width: 700px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .text {
+    line-height: 28px;
+  }
+
+  .moreOnInsta {
+    text-align: center;
+  }
 }
 
 /* Tablet and Smaller Desktop */
