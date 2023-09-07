@@ -11,17 +11,12 @@ export const metadata: Metadata = {
   title: "Canestin Ndong",
   description: "Software Engineer Student & Entrepreneur",
   openGraph: {
-    type: "website",
-    locale: "en_US",
     url: "https://canestin.ndong.co",
-    images: [
-      {
-        url: "https://canestin.ndong.co/favicon.ico",
-        width: 1200,
-        height: 630,
-        alt: "Canestin Ndong",
-      },
-    ],
+    images: {
+      url: "https://canestin.ndong.co/favicon.ico",
+      width: 100,
+      height: 100,
+    },
   },
 };
 
