@@ -26,6 +26,9 @@
   }
 }
 
+.menu {
+  display: none;
+}
 /* Mobile */
 @media (max-width: 700px) {
   .desktop {
@@ -33,6 +36,43 @@
     padding: 20px 0;
     background-color: #212121;
     margin-bottom: 30px;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    margin-top: 90px;
+
+    .rubrics {
+      background-color: #212121;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 30px;
+
+        li {
+          font-size: 20px;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: var(--primary);
+          }
+        }
+      }
+    }
+  }
+
+  .showMenu {
+    display: block;
   }
 
   .mobile {

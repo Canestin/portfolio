@@ -1,8 +1,13 @@
+"use client";
+
 import styles from "./Header.module.scss";
 import Image from "next/image";
+import { useState } from "react";
 import { BiMenu } from "react-icons/bi";
+import { MdOutlineClose } from "react-icons/md";
 
 export default function Header() {
+  const [show, setShow] = useState(false);
   return (
     <>
       <div className={styles.mobile}>
@@ -14,7 +19,9 @@ export default function Header() {
             layout="fill"
           />
         </div>
-        <BiMenu size={40} />
+        <div onClick={() => setShow((s) => !s)}>
+          {show ? <MdOutlineClose size={40} /> : <BiMenu size={40} />}
+        </div>
       </div>
       <div className={styles.desktop}>
         <div className={styles.appointment}>
@@ -51,6 +58,17 @@ export default function Header() {
           >
             <img src="/insta.png" alt="Instagram" />
           </a>
+        </div>
+      </div>
+      <div className={`${styles.menu} ${show && styles.showMenu}`}>
+        <div className={styles.rubrics}>
+          <ul>
+            <li>Home</li>
+            <li>Projects</li>
+            <li>About</li>
+            <li>Skills</li>
+            <li>Entrepreneurship</li>
+          </ul>
         </div>
       </div>
     </>
