@@ -1,1 +1,1 @@
-[My personal website](https://canestin.ndong.co)
+[Personal website](https://canestin.ndong.co)
