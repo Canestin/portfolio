@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     url: "https://canestin.ndong.co",
     images: {
-      url: "https://canestin.ndong.co/profile.jpeg",
+      url: "https://canestin.ndong.co/meta.png",
       width: 500,
       height: 250,
     },

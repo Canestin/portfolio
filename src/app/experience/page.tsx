@@ -12,12 +12,12 @@ const Experience = () => {
 
         <p>
           I co-founded Tagira, a B2B mobile store management application for the
-          French-speaking African market. My goal is to is to transform the way
-          small businesses in French-speaking Africa manage their online
-          business. My skills extend to to business strategy and software
-          development, and I have a strong experience in the complete software
-          development lifecycle, from from requirements gathering to continuous
-          maintenance and continuous improvement. I&apos;m also passionate about
+          French-speaking African market. Our goal is to transform the way small
+          businesses in French-speaking Africa manage their online business. My
+          skills extend to to business strategy and software development, and I
+          have a strong experience in the complete software development
+          lifecycle, from from requirements gathering to continuous maintenance
+          and continuous improvement. I&apos;m also passionate about
           performance, security and scalability, skills that are essential to
           meet today&apos;s software development challenges.
         </p>
