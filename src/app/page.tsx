@@ -4,9 +4,7 @@ export default function Home() {
   return (
     <>
       <p className={styles.title}>Canestin Ndong</p>
-      <p className={styles.description}>
-        Software Engineer Student & Entrepreneur
-      </p>
+      <p className={styles.description}>Software Engineer Student</p>
       <p className={styles.text}>
         I&apos;m currently a student at ISEP Paris, a prestigious institution
         specializing in digital engineering. In the coming weeks, I&apos;ll be

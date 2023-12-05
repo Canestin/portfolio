@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"], weight: "300" });
 
 export const metadata: Metadata = {
   title: "Canestin Ndong",
-  description: "Software Engineer Student & Entrepreneur",
+  description: "Software Engineer Student",
   openGraph: {
     url: "https://canestin.ndong.co",
     images: {
