@@ -27,10 +27,7 @@ export default function Sidebar() {
             </Link>
           </ul>
         </div>
-        <Link
-          href="https://drive.google.com/file/d/1EiW3DEHyQpJ8bfHsk6TTrch2IjqYaTbS/view"
-          target="_blank"
-        >
+        <Link href="https://tagira.africa" target="_blank">
           <div className={styles.ad}>
             <Image
               src="/ad.png"
